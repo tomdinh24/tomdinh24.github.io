@@ -1,0 +1,52 @@
+{
+  "name": "tomdinh24.github.io",
+  "version": "1.0.0",
+  "description": "This repo contains the source code for my website. Go to <a href=\"https://tomdinh24.github.io\">tomdinh24.github.io</a> to check it out!",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions",
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomdinh24/tomdinh24.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomdinh24/tomdinh24.github.io/issues"
+  },
+  "homepage": "https://github.com/tomdinh24/tomdinh24.github.io#readme",
+  "dependencies": {
+    "gatsby": "^4.22.0",
+    "gatsby-plugin-react-svg": "^3.0.1",
+    "gatsby-plugin-sass": "^5.22.0",
+    "gatsby-source-filesystem": "^4.22.0",
+    "gatsby-transformer-remark": "^5.22.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.51.0",
+    "styled-components": "^5.3.5"
+  },
+  "resolutions": {
+    "glob-parent": "^5.1.2",
+    "browserslist": "^4.16.5",
+    "trim": "^0.0.3",
+    "sanitize-html": "^2.3.2",
+    "immer": "^9.0.6",
+    "object-path": "^0.11.8",
+    "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz",
+    "ansi-regex": "^5.0.1",
+    "postcss": "^8.2.13",
+    "ws": "^7.4.6",
+    "node-fetch": "^2.6.7",
+    "async": "^2.6.4",
+    "cross-fetch": "^3.1.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

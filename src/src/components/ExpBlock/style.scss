@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.exp-block {
+  border-radius: 30px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+
+  img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .info {
+    padding: $spacing-large;
+
+    p {
+      white-space: pre-line;
+    }
+
+    .subtitle {
+      font-size: small; 
+      margin-top: $spacing-small;
+  
+
+      .stack {
+        margin: $spacing-small 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: $spacing-small;
+        row-gap: $spacing-small;
+        .stack-tag {
+          border-radius: 5px;
+          padding: $spacing-small;
+          // font-weight: bold;
+        }
+      }
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .social-icons.projects {
+      margin-top: $spacing-medium;
+      display: flex;
+      justify-content: flex-start;
+      column-gap: $spacing-small;
+
+      div {
+        min-width: 2rem;
+        min-height: 2rem;
+      }
+    }
+  }
+}

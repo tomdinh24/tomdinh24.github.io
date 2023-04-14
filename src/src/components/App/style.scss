@@ -1,0 +1,217 @@
+@import '../../styles/variables.scss';
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: $spacing-medium;
+  font-size: 16px;
+  font-size: 1rem;
+
+  &#home {
+    flex-direction: column-reverse;
+    header {
+      text-align: center;
+      padding-right: 0;
+
+      h1 {
+        margin: $spacing-small 0;
+        color: rgb(130, 29, 203);
+      }
+    }
+
+    #profile-pic {
+      width: 50vw;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+
+  &#about-me,
+  &#work,
+  &#projects {
+    flex-direction: column;
+    text-align: left;
+
+    .stack-tag {
+      background-color: rgb(130, 29, 203);;
+    }
+
+    & > * {
+      width: 100%;
+    }
+
+    header h1 {
+      margin: $spacing-large 0;
+      color: rgb(130, 29, 203);
+    }
+
+    & > p {
+      margin: 0;
+    }
+
+    hr {
+      margin: 0 0 $spacing-large;
+    }
+
+    .block-grid {
+      padding: $spacing-large 0;
+    }
+
+    a {
+      color: rgb(130, 29, 203);
+    }
+  }
+
+  .block-grid {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    column-gap: $spacing-small;
+    row-gap: $spacing-large;
+
+    .rounded-block {
+      border-radius: 10px;
+      box-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
+      width: 100%;
+      padding: $spacing-large;
+      text-align: center;
+
+      h2 {
+        margin: 0;
+      }
+
+      .subsection {
+        span {
+          display: block;
+          margin: $spacing-medium;
+        }
+      }
+    }
+  }
+
+  #summary {
+    font-size: 18px;
+    padding: $spacing-large;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+
+    :not(:first-child):not(:last-child) {
+      margin: $spacing-medium 0;
+    }
+
+    :first-child {
+      margin-bottom: $spacing-large;
+    }
+
+    :last-child {
+      margin-top: $spacing-large;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    margin: $spacing-medium 0;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: $spacing-small 0;
+  }
+}
+
+
+.blob-friend {
+  width: 80vw;
+  position: fixed;
+  left: 10vw;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: $spacing-xlarge auto;
+  column-gap: $spacing-small;
+  align-items: flex-end;
+
+
+  &#popup-blob {
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(101%);
+
+
+    &.visible-blob {
+      transform: translateY(0%);
+    }
+  }
+
+  .blob-message {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: $spacing-medium;
+    padding: $spacing-small;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    background-color: rgb(130, 29, 203) !important;
+  }
+}
+
+main {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  text-align: center;
+  padding: $spacing-xlarge $spacing-medium;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: #{$fit-two-col}) {
+  section {
+    margin-left: 0;
+
+    .block-grid {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: $spacing-medium;
+    }
+
+    &#home {
+      flex-direction: row;
+
+      header {
+        text-align: right;
+        padding-right: $spacing-medium;
+      }
+
+      #profile-pic {
+        height: 40vh;
+        width: auto;
+      }
+    }
+    padding: $spacing-large;
+  }
+}
+
+@media (min-width: #{$desktop}) {
+  section {
+    padding: $spacing-xlarge $spacing-xxlarge;
+
+    .block-grid {
+      column-gap: $spacing-large;
+    }
+  }
+}

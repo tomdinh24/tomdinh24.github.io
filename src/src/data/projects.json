@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Face Recognition",
+        "timespan": "July 2022",
+        "summary": "Face recognition program identify users through provided images.",
+        "stack": ["Python", "OpenCV", "Pillow"],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tomdinh24/face_Recognition"
+            }
+        ],
+        "imgName": "Face_Recognition"
+    },
+    {
+        "title": "Blog Website",
+        "timespan": "July 2022",
+        "summary": "Discover new perspectives and ideas through our captivating blog posts, spanning various topics and interests.",
+        "stack": ["HTML", "CSS", "Node.js", "EJS"],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tomdinh24/Blog-Website"
+            }
+        ],
+        "imgName": "Blog_Website"
+    },
+    {
+        "title": "Crypto Bot",
+        "timespan": "August 2022",
+        "summary": "Cryptocurrency Slack Bot that collect data from CoinGecko API\nand return the coin's background history, current price,\nglobal market overview, and trending coins.",
+        "stack": ["Python", "CoinGecko"],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tomdinh24/ACA-SlackBot"
+            }
+        ],
+        "imgName": "Crypto_Bot"
+    },
+    {
+        "title": "Stock Tracker",
+        "timespan": "December 2022",
+        "summary": "A web application that tracks current stock prices and displays a graph of its past prices",
+        "stack": ["React", "HTML", "CSS", "FinnHub"],
+        "links": [
+            {
+                "name": "GitHub",
+                "url": "https://github.com/tomdinh24/StockTracker"
+            }
+        ],
+        "imgName": "Stock_Tracker"
+    }
+]
