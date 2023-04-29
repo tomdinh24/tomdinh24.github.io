@@ -29,7 +29,7 @@ export default class Socials extends React.Component {
           key={icon.name + '-icon'}
           className='nav-icon'
           href={icon.url}
-          aria-label={`Isabella Enriquez's ${icon.name}`}
+          aria-label={`Tom Lam's ${icon.name}`}
           title={icon.name}
         >
           <div
